@@ -551,8 +551,9 @@ class PantallaBusqueda(tk.Frame):
             self.val2.pack_forget()
 
     def buscar(self):
-        from avl import construir_indice, buscar, buscar_rango
+        #from avl import construir_indice, buscar, buscar_rango
         from lector2 import deserializar
+        from ttree import construir_indice, buscar, buscar_rango
 
         campo = self.campo_var.get()
         if not campo:
